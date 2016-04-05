@@ -1,0 +1,17 @@
+Próximos Passos
+
+Implemetations
+- Implementar as classes em outras linguagens e otimizar as mesmas.
+- Documentaçao de código básica(PHP Doc)
+- Página de Detalhe
+- Página de Exclusão Separada
+- Utilizar dados dos campos
+	- Fk, Pk, Legth
+- JavaScript
+- Gerar Telas em XML
+- Gerar Telas em Glade XML
+
+Documentation
+- Documentar em diagramas.
+- Fazer a arquitetura do class
+- Elaborar Arquiteturas diferenciadas

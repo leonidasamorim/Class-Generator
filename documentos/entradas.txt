@@ -1,0 +1,19 @@
+-> Soluções para Gerar os Metadados
+	-> Seria fazer um SQL pra cada Banco
+		-> Desvantagem
+			-> Tem que ter o Banco Acessível;
+			
+	-> Gerar um XML a partir da conexão de cada banco
+		-> Vantagem não precisa do Banco Acessível
+		
+	-> Integrar com uma Ferramenta Case(Arquitect ER, Eclipse, ...)
+		-> Vantagem
+			-> Não precisa de nada
+		-> Devantagems
+			-> Complexibilidade	
+	
+	-> Ler um formato padrão
+		-> XML DB Designer;
+		-> Formato ER Studio;
+		-> XML do Dia;
+		-> SQL Create;

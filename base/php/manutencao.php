@@ -1,0 +1,3 @@
+<?
+print "Página de manutenção";
+?>

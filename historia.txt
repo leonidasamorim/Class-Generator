@@ -1,0 +1,30 @@
+A História
+
+Em julho de 2001, comecei a trabalhar no projeto SAAD(http://sig.ufpa.br/saad) no Laboratório
+de Engenharia Elétrica, na Universidade Federal do Pará(www.ufpa.br), convidado pelos 
+amigos Leonardo Gatti e Eduardo Guerra, e orientado pelo professor Luiz Affonso Guedes.
+O SAAD já estava 50% implementado, e já seguia um padrão de desenvolvimento bem claro e 
+baseado em um trabalho de dois alunos da UFPA(Davi Mitsuo Shibayama e seu amigo). 
+Ao fim do projeto, avaliamos o resultado e os padrões e tecnologias adotadas e acabamos 
+otimizando o padrão de desenvolvimento baseado em alguns artigos da área. Quando iamos 
+começar o novo projeto nós percebemos que haveria muita repetição de código padronizado
+e logo os meus colegas de trabalho idealizaram um gerador para esta aplicação em específico.
+Logo o Eduardo chegou com um gerador de classes básicas, e depois eu cheguei com o gerador 
+para as outras classes da arquitetura, com uma forte ajuda do Leonardo e do própio Eduardo.
+A partir dessa versão desenvolvemos vários sistemas, como o Portal da Amazônia
+(www.portaldaamazonia.org.br), Pré-matrícula, ...
+A princípio era somente um gerador de classes, que com o tempo foi integrado com o nosso
+Framework de desenvolvimento e hoje gera diversos artefatos como: intefaces e alguma 
+documentação.
+Nesse período o ClassGenerator foi reescrito duas vezes e foram adicionadas diversas 
+funcionalidades como: ADOBD, Cadastro de métodos, geração de interfaces, integraçao com 
+um Framework, entre outras. O ClassGenerator 2 deve ser portado mais uma vez pra PHP 5 agora,
+e deve utilizar de maneira eficiente XML. Além de gerar com propriedade pelo menos classes 
+para as tecnologias Java e Phyton.
+Por último, em Fevereiro de 2005, conclui minha graduaçao com o TCC sobre o ClassGenerator
+que está disponível em: http://www.marcelioleal.net/marcelio/sapp/conteudo/presentation/TccFinal.pdf
+Neste trabalho estão a maioria das explicaçoes técnicas sobre a ferramenta.
+Demorei um pouco pra distribuí-la, mas nunca é tarde.
+Agora precisamos de ajuda pra continuar evoluindo.
+
+Marcelio Leal, 1 de outubro de 2005.

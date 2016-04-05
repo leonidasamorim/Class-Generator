@@ -1,0 +1,24 @@
+Autor do Projeto e Mantenedor
+============================
+# Marcelio Leal
+
+Contribuintes
+============
+# Eduardo Guerra - Concepção e desenvolvimento da Classe Básica
+# Leonardo Gatti - Concepção e Estabelecimento do padrão
+# Affonso Guedes - Concepção e Estabelecimento do padrão
+# Eloi Favero - Evolução do código
+# Rafael Mauro (Classe JavaScript FormContext - Layouts das Interfaces - Esquema de Templates)
+
+Sugestões
+===========
+# Luiz Leão
+# Deuzinei Pinheiro
+# Michel Pena
+# Leandro Lages - Sugestão de Transação(Geniall)
+# Grupo PHP Pai d'Égua - Grupo de desenvolvedores PHP de Belém do Pará
+
+Projetos usados pelo Classgenerator
+======================
+# PHP          	(www.php.net);
+# ADODB			(adodb.sourceforge.net) - 4.80;

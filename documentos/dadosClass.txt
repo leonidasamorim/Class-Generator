@@ -1,0 +1,67 @@
+TCC
+ClassGenerator
+	Nucleo(Kernel) - Funcionalidades básicas e é independente;(Marcelio)
+		- Definir Mapeamentos
+		- Definir Interfaces e Estruturas;
+		
+	Modulos
+		Gerador de Interfaces (Rafael)
+			HTML
+			XML(Glade)
+			XML Básico
+		Gerador de Classes
+			
+		Gerador de Documentacao
+			PHPDoc
+			JavaDoc
+			ER
+			Descrição dos Novos Métodos
+			Geracao de XMI(Umbrello, Rose, Visual Paradigm)
+			
+		Gerador de Validacao(JavaScript)
+					
+		Gerador de Unit Test
+			
+	Interfaces de Entrada
+		Banco de Dados
+			MySQL
+			Oracle (Gustavo)
+			Firebird
+		XML (Leandro ou  Gustavo)
+		Integracao com ER
+		SQL
+
+	Linguagens
+		PHP (Marcelio)
+		Java (Gustavo)
+		Phyton (Marcelio)
+	
+	Objetivos
+		Padroes
+			Integracao Fachada
+			
+		Tipos de Sistema
+			Sistemas com acesso e manipulacao de BD
+			Sistemas de interfaces personalizadas(MVC)
+			
+			
+------------------------------------------------------------------------------------------
+Arquitetura
+Projeto
+Intermediario
+Classes
+	Fachada
+	Cad
+	CadBD
+	Basica
+	
+Interface
+	JavaScript
+	HTML
+	XML
+	XMLGlade
+
+Documentacao
+	Codigo
+	Modelos
+

@@ -1,0 +1,46 @@
+Funcionalidades e Pendencias
+
+- erro na extração dos parametros do SQL e erro na edição dos parâmetros
+
+- na class MetaCadBD tranformar numa classe estilo fachada.(deixar um método que gera todos)
+
+- parametros ini e num nos novos metodos de pesquisa que retornem conjuntos ou arrays.
+	- tirando o codigo da Metacadbd getall
+
+- barrar e imprimir msgs qnd naum tiver tbls em um bd e outras restricoes 
+- erro de permissão de escrita
+
+- sintaxe correta para paginação no DB2 classe SQLDB2
+- sintaxe de seleçao no banco de dados como inteiro ou inserção ...
+
+- colocar na classe basica a conversão de datas - tirar da conexao
+
+- deixar um framework de segurança(basico e avançado)
+
+- colocar a tag title e gerar automaticamente a dica
+
+- Como fazer o banco que mapea o outra encontrar os métodos.
+
+- Fazer classe Básica em Phyton
+
+- COdigo para adiocionar a atulização de datas automaticamente
+		for($j=0;$j<count($atts);$j++){
+			if($atts[$j]->getCategory() == "date"){
+				$textoI = "Util::converteDataBanco(";
+				$textoF = ")";
+			}
+			$texto .= $textoI."$".$this->table->getNameF()."->get".ucfirst($atts[$j]->getNameF())."()".$textoF;
+			$texto .= (($j != (count($atts)-1))?", ":");\n  }\n\n");
+		}
+		
+Na cad
+Soh que precisaria atualizar a Util pro casos automaticos, na verdade pra os casos em execuçção como PTA e UfpaWeb
+
+Tah inserido, mas não sei se funciona.
+
+---------------
+
+-> Explicar a necessidade no mapeamento que as tabelas tenham o mesmo nome, ou entaum fazer um arquivo de mapeamento em XML, que pode ser uma solução.
+
+-> Desconextar a geração das classes com a interface, principalmente a básica.
+

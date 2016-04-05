@@ -1,0 +1,24 @@
+Para instalar a ferramenta, você deve ter em seu computador um servidor web, 
+o SGBD MySQL e o PHP instalados. Não há requisitos mínimos pra rodar a 
+ferramenta, se o seu computador puder rodar os softwares acima citados 
+o gerador irá rodar também.
+
+Para instalar baixe o arquivo classgenerator.zip e siga os passos:
+1. Descompacte o arquivo na pasta do servidor web;
+2. Crie um BD com o nome classgenerator e execute o arquivo documentacao/SQL/class.sql
+com as instruções SQL, para criação das tabelas e registros básicos;
+3. Modifique o arquivo class/classes/class.Conexao.php, e informe o login e a senha do
+usuário do BD;
+4. Dê permissão de escrita para o usuário do servidor web(Se for o Apache no Linux, por
+exemplo, possivelmente será o login apache) na pasta arquivos do classgenerator;
+5. Agora teste. ex.: http://localhost/classgenerator
+
+Mais informações em: www.marcelioleal.net/classgenerator
+
+
+PS.: Qualquer configuração de Banco de Dados extra deve ser feita no arquivo class/classes/class.Conexao.php
+O Banco está configurado pra um MySQL com transações.
+
+PS2.: O ClassGenerator está dependende da configuração no php.ini short_open_tag = On
+
+PS3.: Caso o class não fique no diretório padrão como por exemplo: www/geradores/classgenerator, mude a constante dir no arquivo template/templateHeaders.php para que os estilos e scripts funcionem.

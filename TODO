@@ -1,0 +1,112 @@
+TODO
+====
+Projeto
+	- Criar Tutorial
+	- Criar Faq
+	- Criar arquivo de comparacao com outras opcoes
+	- Melhorar o INSTALL
+1.1
+	- Modificar a tag de abertura para <?php, no class e nos artefatos (in progress)
+	- Verificar erros possiveis citados pelo eclipse e pelo Zend (in progress) (Pasta classes ok, base ok//erro plugin eclipse, falta nos artefatos gerados)
+	- Verificar os arquivos realmente necessarios no metodo e talvez gerar de novo
+	- Colocar do README a sugestao de baixar a versao mais nova da ADODB
+	- Colocar no INSTALL as possiveis configuracoes para novos MySQL, como a biblioteca MySQLi, mudando na classe Conexao
+	- Melhorar a configuracao dos diretorios, colocar no template headers e descrever no INSTALL
+	- Colocar link pra historia e autores, para a pagina do projeto na tela inicial
+	- colocar powered by php e mais aquelas ondas da w3c
+	- Passar vazio nos ids autoincrement nos construtores de objetos no cadastro
+	- Corrigir erro quando o campo eh enum ele gera um text todo errado(Mapeamento)
+	- Deixar pedaço de codigo de validação, ou colocar uma opçãode escolha. Se não houver nada pra validar não validar nada, ok?
+	- Passar todas as variaveis por um tratamento automatico na classe Util.... principalmente as strings
+	- Gerar uma FrontController
+	- PHPDoc
+	- Melhorar a tela de manutencao
+	- Melhorar classe Cad
+	- Erro na pesquisa por datas
+
+
+	- Template headers do class esta setado direto, colocar a opção de setar o diretorio ok (falta resetar) e colocar no install
+	- Depois de testado as classes Cad com metodos novos de pesquisa, excluir codigo comentado
+
+	- Colocado <?php em todas as classes geradas ok
+	- Modificar o metodo de criacao de objetos, abstrair na CAD ok
+	- Colocar <?php nas classes basicas ok
+	- Modificar os comentarios gerados na parte superior  ok
+	- Atualizar a classe SMTP ok
+	- Atualizar a versao da ADOBD(4.80) ok
+	- Atualizar somente adodb no class em um diretorio, o de classes, o de metodo soh aponta pra ele. ok	
+	- Tirar o Phyton Java do ClassGenerator, colocar somente depois de testado ok	
+	- Apagar os dados na classe constante ok
+	- Fazer o metodo que pega a descrição da constant ok
+	- Corrigir erro na constante, pois uma chamada estática não pode utilizar a variavel de instancia this. ok
+2.0
+	- Criar arquivo de configuracao de diretorio e outros, para excluir as constantes das paginas. Como se fosse um web.xml	
+	- Migrar o codigo pra PHP5
+	- ADODB para PHP 5
+	- Estudar ADODB Lite
+	- Pensar em utilizar os artefatos da base os mesmo do class
+	- Adicionar a opcao de classes Java
+	- No arquivo de configuracao colocar o numero max de registros por pagina, utilizado na classe constante, mas deixar o metodo tradicional, para que o usuario nao seja obrigado a utilizar XML
+	- Utilizar o conceito de pagina de pesquisa ou query e pagina de cadastro/atualizacao, herdar da Front Controller e fazer varias controller
+ - Usar Formato XML para gravaçao dos projetos
+ - Ler formato XML-ER Metadados
+ - Ler formato DBDesign
+ - Integrar com o StrutsGen
+ - Interface CLI
+ - Interface GTK
+ - Gerar XMLGlade
+ 
+URGENTE:
+=======
+ - Implementar UnitTests
+ - Mudar Arquitetura Gerada
+
+Não tão urgente:
+================
+ - Usar a abstraçao de LIMIT do ADODB
+ 
+ - Utilizar a historia do classgenerator 1, jah esta sendo modificada ?
+Mudar a interface web, colocar somente em um tela e adicionar ajax se possível ?
+Pensar em usar iframe ?
+
+Mudar as referencias de pagina ?
+no fim da geração e no comeco dos documentos ?
+
+Observar os erros de otimização do código pegados pelo plugin php do eclipse
+
+O Template headers que está sendo gerado não leva em consideração o diretorio o que leva a não encontrar os scripts de estilo e javascript
+isso é um erro grave
+
+--------------------------------
+Usar isso na nova implementação
+Autoloading Objects
+
+Muitos desenvolvedores ao desenvolver aplicações orientadas a objeto criam um arquivo PHP para cada definição de classe. Um dos maiores contratempos é ter de escrever uma longa lista de includes no início de cada script(um include para cada classe necessária).
+
+Com PHP 5 isso não é mais necessário. Você pode definir uma função __autoload que é automaticamente chamada no caso de você tentar usar uma classe que ainda não foi definida. Ao chamar essa função o 'scripting engine' tem uma última chance para carregar a classe antes que o PHP falhe com erro.
+
+Exemplo 19-5. Exemplo de Autoload
+
+Essse exemplo tenta carregar as classes MyClass1 e MyClass2 dos arquivos MyClass1.php e MyClass2.php respectivamente.
+<?php
+function __autoload($class_name) {
+   require_once $class_name . '.php';
+}
+
+$obj  = new MyClass1();
+$obj2 = new MyClass2();
+?> 
+O autoloadind vai ficar na frontcontroller
+--------------------------------
+ Zipar e Baixar
+ 
+ <?
+        //Put this script in the header of a file
+        //You can submit $Dir, $File_Name, $File_Extension by another script
+        header("Content-disposition: filename=$File_Name.$File_Extension");
+        header("Content-type: application/force-download");
+        readfile("$Dir"."$File_Name.$File_Extension");
+?>
+
+
+Postar erro no verificador de erros do phpeclipse quando utiliza-se o eval criando uma variavel ele nao reconhece
